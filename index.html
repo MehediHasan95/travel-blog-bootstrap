@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling</title>
+    <!-- CSS Stylesheets link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome link -->
+    <script
+      src="https://kit.fontawesome.com/825c74232b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container container-sm container-md container-lg">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Traveling</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Sign in
+              </button>
+
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h1 class="text-center">Sign In</h1>
+                      <form>
+                        <div class="form-floating mb-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="floatingInput"
+                            placeholder="name@example.com"
+                          />
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control mb-3"
+                            id="floatingPassword"
+                            placeholder="Password"
+                          />
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+                          <label class="form-check-label" for="exampleCheck1"
+                            >I agree to the terms and conditions and the privacy
+                            policy</label
+                          >
+                        </div>
+                        <div class="d-grid">
+                          <button class="btn btn-dark" type="button">
+                            Sign In
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+      <!-- Carousel Section -->
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/carousel-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <h1 class="display-5 text-center my-sm-2 my-md-3 my-lg-5">
+        Most Popular Tour
+      </h1>
+      <section class="d-flex justify-content-center">
+        <div class="row">
+          <div class="col my-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img src="images/card-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="text-center">The Venice Experience</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img src="images/card-2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="text-center">Valley of the Kings</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img src="images/card-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="text-center">Italian Dream Tour</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center my-5 my-md-3 my-sm-2">
+        <h1 class="mb-4 display-4">Latest News</h1>
+        <p class="w-75 mx-auto">
+          Nullam ac justo efficitur, tristique ligula a, pellentesque ipsum.
+          Quisque augue ipsum, vehicula et tellus nec, maximus viverra metus. In
+          sed viverra dui. Suspendisse laoreet velit at eros eleifend.
+        </p>
+      </section>
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+      <section class="shadow p-3 mb-5 bg-body rounded my-5">
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-calendar-days fs-3 text-danger"></i>
+                  Diverse Destinations
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-train fs-3 text-danger"></i> Adventure
+                  Time
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-flag fs-3 text-danger"></i> Fast Booking
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-shirt fs-3 text-danger"></i> Guided
+                  Tours
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-utensils fs-3 text-danger"></i>
+                  Incredible Journey
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-gem fs-3 text-danger"></i> Traveling
+                  Together
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-sun fs-3 text-danger"></i> Away We Go
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+          >
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-earth-africa fs-3 text-danger"></i>
+                  Cruise Lines
+                </h5>
+                <p class="card-text">
+                  Donec ultricies, turpis a sagittis suscipit, ex odio volutpat
+                  sem, vel molestie ligula enim varius est. Pellentesque ipsum
+                  nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------- -->
+      <section class="text-center my-5 my-md-3 my-sm-2">
+        <div>
+          <h1 class="mb-4 display-4">Find Your Perfect Tour</h1>
+          <p class="w-75 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            sollicitudin, tellus vitae condimentum egestas, libero dolor auctor
+            tellus, eu consectetur neque elit quis nunc. Cras elementum pretium.
+          </p>
+        </div>
+        <div class="row gy-4 my-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-egypt.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Egypt</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-paris.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Paris</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-cuba.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Cuba</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-machu-picchu.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Machu Picchu</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-rome.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Rome</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-venice.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Venice</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-madagascar.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Madagascar</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-vietnam.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Vietnam</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-london.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">London</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-indonesia.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Indonesia</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-thailand.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Thailand</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-ethiopia.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Ethiopia</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-dubai.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Dubai</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-santorini.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Santorini</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-belgrade.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Belgrade</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-japan.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Japan</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-taiwan.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Taiwan</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-brazil.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Brazil</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-milano.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Milano</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-white">
+              <img
+                src="images/destinations/destination-spain.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center"
+              >
+                <h5 class="card-title display-6 fw-bold">Spain</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center my-5 my-md-3 my-sm-2">
+        <h1 class="mb-4 display-4">Interesting Facts</h1>
+        <p class="w-75 mx-auto">
+          Nullam ac justo efficitur, tristique ligula a, pellentesque ipsum.
+          Quisque augue ipsum, vehicula et tellus nec, maximus viverra metus. In
+          sed viverra dui. Suspendisse laoreet velit at eros eleifend.
+        </p>
+      </section>
+    </main>
+    <br />
+    <br />
+    <foote>
+      <div
+        class="container container-sm container-md container-lg bg-dark text-white p-5"
+      >
+        <div class="row mb-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h1>Traveling</h1>
+            <p>
+              Nullam ac justo efficitur, tristique ligula. Lorem Ipsn gravida
+              nibh vel velit auctor aliquet. Aenean sollicitudin
+            </p>
+
+            <small class="d-block">
+              <i class="fa-solid fa-phone"></i> 1-677-124-44227</small
+            >
+            <small class="d-block"
+              ><i class="fa-solid fa-location-dot"></i> 184 Main Street West
+              Victoria 8007</small
+            >
+            <small class="d-block"
+              ><i class="fa-solid fa-clock"></i> Mon - Sat 8.00 - 18.00 Sunday
+              CLOSED</small
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h3>Latest News</h3>
+            <p>Water & Rocks: Discovering the Beauty of New Zealand</p>
+            <small>05.4.2016</small>
+            <hr />
+            <p>Updates: People Who Work Overseas and Fly For Free</p>
+            <samp> 05.4.2016 </samp>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h3>Gallery</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro
+              beatae dolorem eum ducimus obcaecati architecto non odit ad
+              laboriosam commodi, nulla deleniti dolorum esse error id, nam,
+              laudantium ullam.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h3>Follow Us</h3>
+            <i class="fa-brands fa-twitter"></i>
+            <p>
+              Want to create a fully functional #auction #website? Check out
+              these auction #plugins that will help you set up and…
+              https://t.co/DVecnAvwrD
+            </p>
+            <hr />
+            <i class="fa-brands fa-twitter"></i>
+            <p>
+              Slide transitions are effects that occur when one slide changes to
+              allow the next one to appear. They can help defi…
+              https://t.co/RtFWOqjD7f
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="d-flex justify-content-between">
+          <small>© 2016 Qode Interactive, All Rights Reserved</small>
+          <div>
+            <i class="fa-brands fa-twitter ms-2"></i>
+            <i class="fa-brands fa-facebook ms-2"></i>
+            <i class="fa-brands fa-instagram ms-2"></i>
+            <i class="fa-brands fa-linedine ms-2"></i>
+            <i class="fa-brands fa-pinterest-p ms-2"></i>
+            <i class="fa-brands fa-vimeo-v ms-2"></i>
+            <i class="fa-solid fa-basketball ms-2"></i>
+          </div>
+        </div>
+      </div>
+    </foote>
+    <!-- Script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
